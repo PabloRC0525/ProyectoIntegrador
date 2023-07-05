@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar pedido</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styleBuscar.css') }}">
+</head>
+<body>
+        <form action="/buscar" method="post">
+        <div class="contenedor">
+            <h1>Buscar pedido</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Folio pedido" class="input-control">
+            </div>
+            <button type="submit" class="btn">Buscar</button>
+        </div>
+            <div class="container"></div>
+        <table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cliente</th>
+                        <th>Productos</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Rodrigo Garcia</td>
+                        <td>Pizza, hamburguesa, frappe</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Ximena Garcia</td>
+                        <td>Hamburguesa, frappe</td>
+                        <td>$85</td>
+                    </tr>
+                </tbody>
+        </table>
+    </form>   
+</body>
+</html>
